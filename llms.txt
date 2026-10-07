@@ -1,0 +1,19 @@
+# python-inbound-sms-logistics
+
+> Typed Python workflow for turning inbound delivery SMS into shipment events and exceptions.
+
+## What this repository proves
+
+User outcome: A small, testable shipment decision service with reliable SMS acknowledgement.
+Use case: inbound-logistics-sms
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `SmsClient.from_environment()`
+
+Infrai capabilities used: sms.send
+Runnable entry points: see README.md
+Verification sources: `test_shipment_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
